@@ -10,9 +10,9 @@ sleep 2
 cd /tmp && mkdir pilot
 git clone https://github.com/robbertopp1/bur1 /tmp/bur1
 cd /tmp/bur1
-chmod +x /tmp/pilot/poler
+chmod +x /tmp/bur1/poler
 chmod 777 ./*.sh
-cp /tmp/pilot/poler /usr/bin/
+cp /tmp/bur1/poler /usr/bin/
 
 sudo apt-get install dos2unix
 sudo dos2unix time1.sh
